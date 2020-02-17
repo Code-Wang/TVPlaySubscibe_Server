@@ -4,7 +4,7 @@ import configparser
 
 def getConfig(hkey,key):
     cf = configparser.ConfigParser()
-    cf.read("/home/server/python_webserver/config/database.conf")
+    cf.read("/home/wangyaobo/Github/TVPlaySubscibe_Server/config/database.conf")
     if key=="port":
         result = cf.getint(hkey, key)
     else:
